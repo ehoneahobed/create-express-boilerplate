@@ -7,6 +7,7 @@ The `create-express-boilerplate` CLI tool offers a streamlined method for genera
 - **Basic Express.js Application**: Quickly generate a basic Express.js application with minimal setup.
 - **MVC Structure Option**: Add an MVC structure to your project for more complex applications, organizing your code into models, views, and controllers.
 - **Simple to Use**: Generate a new project with just a single command.
+- **MVC Structure Option with mongodb as the database**: Add an MVC structure to your project for more complex applications, organizing your code into models, views, and controllers and store user info with mongodb.
 
 ## Prerequisites
 
@@ -20,7 +21,7 @@ You don't need to install this CLI tool globally, thanks to `npx`. Simply run th
 npx create-express-boilerplate <project-name> [--mvc]
 ```
 
-Replace `<project-name>` with the name of your new project. The optional `--mvc` flag, if included, adds an MVC folder structure to your project.
+Replace `<project-name>` with the name of your new project. The optional `--mvc` or `--mongodb` flag, if included, adds an MVC folder structure to your project. And when the mongodb flag is used the app is created with a mongodb database
 
 ## Usage
 
@@ -34,6 +35,12 @@ For an Express.js project with an MVC structure:
 
 ```bash
 npx create-express-boilerplate my-express-app --mvc
+
+
+For an Express.js project with an MVC structure and mongodb databse:
+
+```bash
+npx create-express-boilerplate my-express-app --mongodb
 ```
 
 ## Project Structure
@@ -49,6 +56,14 @@ Depending on the options selected, the tool generates the following structure:
   - `controllers/`: Contains business logic.
   - `models/`: Contains database models.
   - `utils/`: Contains utility functions.
+
+  - **Mongodb MVC Project**:
+  -`src/` : contains all the app logic
+  - `index.js`: Application entry point.
+  - `routes/`: Contains route handlers.
+  - `controllers/`: Contains business logic.
+  - `models/`: Contains database models.
+ 
 
 ## Contributing
 
