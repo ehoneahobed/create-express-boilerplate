@@ -35,7 +35,7 @@ For an Express.js project with an MVC structure:
 
 ```bash
 npx create-express-boilerplate my-express-app --mvc
-
+```
 
 For an Express.js project with an MVC structure and mongodb databse:
 
