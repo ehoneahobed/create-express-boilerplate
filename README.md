@@ -57,7 +57,7 @@ Depending on the options selected, the tool generates the following structure:
   - `models/`: Contains database models.
   - `utils/`: Contains utility functions.
 
-  - **Mongodb MVC Project**:
+- **Mongodb MVC Project**:
   -`src/` : contains all the app logic
   - `index.js`: Application entry point.
   - `routes/`: Contains route handlers.
