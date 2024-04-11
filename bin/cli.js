@@ -6,7 +6,7 @@ const addMVCStructure = require('../modules/mvc');
 const addBasicStructure = require('../modules/basic');
 
 program
-  .name('expressjs-snippets')
+  .name('create-express-boilerplate')
   .argument('<project-name>', 'Name of the project directory to create')
   .option('--mvc', 'Add MVC structure to the project')
   .action(async (projectName, options) => {
