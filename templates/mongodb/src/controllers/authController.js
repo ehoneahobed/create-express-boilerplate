@@ -2,7 +2,6 @@ import User from "../models/User.js"
 import bcrypt from "bcrypt"
 
 
-
 const register = async(req,res)=>{
     // code to add new user
     const {name, email, password} = req.body
@@ -13,7 +12,7 @@ const register = async(req,res)=>{
         await User.create({
             name,
             email,
-            password: await bcrypt.hash(password,10) //Encrypt the user password
+            password: await bcrypt.hash(password, 10) //Encrypt the user password
         })
         .then(()=>{
             console.log("User created successfully")
@@ -79,4 +78,4 @@ const login = async(req,res)=>{
 }
 
 
-export {login,register}; 
+export {login, register}; 

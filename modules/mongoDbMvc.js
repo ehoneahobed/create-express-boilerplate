@@ -5,7 +5,7 @@ async function addMongoDbMVCStructure(projectPath) {
   const templatePath = path.join(__dirname, '../templates/mongodb');
   try {
     await fs.copy(templatePath, projectPath);
-    console.log('Mongodb mvc structure added successfully.');
+    console.log('Mongodb MVC structure added successfully.');
   } catch (error) {
     console.error('Failed to add Mongodb MVC structure:', error);
   }

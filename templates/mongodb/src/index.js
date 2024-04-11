@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true}))
 
 //@desc   Authentication routes 
 //@route  /api/auth/...
-app.use("/api/auth",AuthRouter)
+app.use("/api/auth", AuthRouter)
 
 
 
@@ -29,5 +29,5 @@ mongoose.connect(process.env.MONGODB_URL)
     })
 })
 .catch((err)=>{
-    console.log("Error connecting to MongoDB",err)
+    console.log("Error connecting to MongoDB", err)
 })
